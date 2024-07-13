@@ -49,3 +49,32 @@ void pesanTiket()
         cout << "Selamat, Tiket berhasil dipesan!\n";
     }
 }
+
+void kelolaMenu()
+{
+    int pilihan;
+    do
+    {
+        cout << "\nSistem Pemesanan Tiket Bioskop\n";
+        cout << "1. Tampilkan Daftar Film\n";
+        cout << "2. Pesan Tiket\n";
+        cout << "3. Keluar\n";
+        cout << "Pilih opsi: ";
+        cin >> pilihan;
+
+        switch (pilihan)
+        {
+        case 1:
+            tampilkanFilm();
+            break;
+        case 2:
+            pesanTiket();
+            break;
+        case 3:
+            cout << "Keluar dari program.\n";
+            break;
+        default:
+            cout << "Opsi tidak valid. Silakan coba lagi.\n";
+        }
+    } while (pilihan != 3);
+}
