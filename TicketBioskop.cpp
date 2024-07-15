@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <conio.h>
 using namespace std;
 
 #define MAX_FILM 5
@@ -26,6 +27,7 @@ void tampilkanFilm()
     {
         cout << i + 1 << ". " << daftarFilm[i].judul << " - " << daftarFilm[i].jadwal << " - Tiket tersisa: " << daftarFilm[i].sisaTiket << endl;
     }
+    getch();
 }
 void pesanTiket()
 {
