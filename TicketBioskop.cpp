@@ -18,7 +18,8 @@ Film daftarFilm[MAX_FILM] = {
     {"Jurnal Risa", "19:00", 100},
     {"Despicable Me 4", "21 : 00 ", 100}}
 
-void tampilkanFilm()
+void
+tampilkanFilm()
 {
     cout << "Daftar Film:\n";
     for (int i = 0; i < MAX_FILM; i++)
@@ -77,4 +78,9 @@ void kelolaMenu()
             cout << "Opsi tidak valid. Silakan coba lagi.\n";
         }
     } while (pilihan != 3);
+}
+int main()
+{
+    kelolaMenu();
+    return 0;
 }
