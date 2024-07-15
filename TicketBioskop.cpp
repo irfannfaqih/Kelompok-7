@@ -3,6 +3,7 @@
 using namespace std;
 
 #define MAX_FILM 5
+#define MAX_TIKET 100
 
 struct Film
 {
@@ -16,10 +17,9 @@ Film daftarFilm[MAX_FILM] = {
     {"Inside Out 2", "13:00", 100},
     {"Ipar adalah Maut ", "16:00", 100},
     {"Jurnal Risa", "19:00", 100},
-    {"Despicable Me 4", "21 : 00 ", 100}}
+    {"Despicable Me 4", "21:00", 100}};
 
-void
-tampilkanFilm()
+void tampilkanFilm()
 {
     cout << "Daftar Film:\n";
     for (int i = 0; i < MAX_FILM; i++)
@@ -99,12 +99,4 @@ int main()
         daftarFilm[pilihanFilm - 1].sisaTiket -= jumlahTiket;
         cout << "Selamat, Tiket berhasil dipesan!\n";
     }
-}
-{
-    Film daftarFilm[MAX_FILM] = {
-        {"Civil War", "10:00", 100},
-        {"Inside Out 2", "13:00", 100},
-        {"Ipar adalah Maut ", "16:00", 100},
-        {"Jurnal Risa", "19:00", 100},
-        {"Despicable Me 4", "21:00", 100}};
 }
